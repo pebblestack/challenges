@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DM Serif Display", serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  font-weight: 700;
+}
+
+.brand_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn_toggle:active,
+.btn_toggle:focus,
+.btn_toggle {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.collapse_nav {
+  display: none;
+}
+
+.show {
+  display: block;
+  padding-top: 1rem;
+}
+
+.show_toggle {
+  display: none;
+}
+
+.nav_link {
+  color: hsl(0, 0%, 98%);
+  text-transform: uppercase;
+}
+
+.btn_nav {
+  border: 2px solid hsl(0, 0%, 98%);
+}
+
+.show_wrapper {
+  display: none;
+}
+
+/* NAVBAR */
+
+.top_section_bg {
+  margin-bottom: 12rem;
+  position: relative;
+  background-color: hsl(256, 26%, 20%);
+}
+
+.top_section {
+  display: grid;
+  grid-template-areas: "img" "text";
+}
+
+.top_section .column_1 {
+  grid-area: text;
+  color: hsl(0, 0%, 98%);
+  text-align: center;
+  background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 5rem 1rem;
+}
+
+.top_section .column_1 .title {
+  font-size: 2.4em;
+  margin-bottom: 1rem;
+}
+
+.top_section .column_1 .text {
+  margin-bottom: 2rem;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.top_section .column_2 {
+  grid-area: img;
+  position: relative;
+}
+
+.top_section .column_2 .image {
+  width: 100%;
+}
+
+.top_section .column_1 .line {
+  display: none;
+}
+
+.btn {
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
+
+.top_section_bg .right-bg-movil {
+  position: absolute;
+  right: 0;
+  right: 0;
+  bottom: -230px;
+}
+
+.top_section_bg .right-bg-desktop {
+  display: none;
+}
+
+.top_section_bg .left-bg-desktop {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.section_1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.line {
+  width: 35%;
+  margin: 0 auto 2rem;
+}
+
+.article_diferent {
+  margin-bottom: 2rem;
+}
+
+.section_1 .title {
+  font-size: 2.4em;
+  margin-bottom: 5rem;
+  color: hsl(270, 9%, 17%);
+}
+
+.article_diferent .icon_article {
+  margin-bottom: 2rem;
+}
+
+.section_1 .article_diferent .title {
+  font-size: 1.56em;
+  margin-bottom: 2rem;
+  color: hsl(270, 9%, 17%);
+}
+
+.section_1 .article_diferent .text {
+  color: hsl(216, 30%, 68%);
+  font-size: 0.95em;
+  line-height: 1.5rem;
+}
+
+.footer {
+  background-color: hsl(0, 0%, 98%);
+  background-image: url(./images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 5rem 0 3rem;
+}
+
+.footer .column_1 {
+  text-align: center;
+}
+
+.footer .column_1 img {
+  margin-bottom: 2rem;
+}
+
+.footer .column_1 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .column_1 ul li {
+  margin: 0 1rem;
+}
+
+.footer .column_1 ul li:hover > img {
+  filter: brightness(0) invert(0);
+}
+
+.footer .line {
+  width: 100%;
+  border-color: hsl(0, 0%, 98%);
+}
+
+.footer .column_2 {
+  text-align: center;
+}
+
+.footer .column_2 .title {
+  font-size: 1em;
+  letter-spacing: 4px;
+  color: hsl(273, 4%, 51%);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: var(--Body);
+}
+
+.footer .column_2 ul {
+  margin-bottom: 3rem;
+}
+
+.footer .column_2 ul li {
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  color: hsl(270, 9%, 17%);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer .section_1 {
+  margin-bottom: 0;
+}
